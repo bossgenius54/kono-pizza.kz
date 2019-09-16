@@ -19,10 +19,10 @@
                                 </p>
                                 <div class="banner_btn">
                                     <div class="banner_btn_iner">
-                                        <a href="#" class="btn_2">Reservation <img src="img/icon/left_1.svg" alt=""></a>
+                                        <a href="{{url('menu')}}" class="btn_2">Гоу посмотреть на Короля <img src="img/icon/left_1.svg" alt=""></a>
                                     </div>
-                                    <a href="https://www.youtube.com/watch?v=pBFQdxA-apI" class="popup-youtube video_popup">
-                                        <span><img src="img/icon/play.svg" alt=""></span> Watch our story</a>
+                                    <!-- <a href="https://www.youtube.com/watch?v=pBFQdxA-apI" class="popup-youtube video_popup">
+                                        <span><img src="img/icon/play.svg" alt=""></span> Watch our story</a> -->
                                 </div>
                             </div>
                         </div>
@@ -99,32 +99,75 @@
 
         <!-- about part start-->
         <section class="about_part">
-            <div class="container-fluid">
+            <div class="container-fluid client_review_part owl-carousel">
                 <div class="row align-items-center">
                     <div class="col-sm-4 col-lg-5 offset-lg-1">
                         <div class="about_img">
                             <img src="img/about.png" alt="">
                         </div>
                     </div>
-                    <div class="col-sm-8 col-lg-4">
+                    <div class="col-sm-8 col-lg-4" id="bonus">
                         <div class="about_text">
-                            <h5>Our History</h5>
-                            <h2>Where The Food’s As Good
-                                As The Root Beer.</h2>
+                            <h5>Тук-Тук</h5>
+                            <h2>Хочешь сэкономить?</h2>
                             <h4>Satisfying people hunger for simple pleasures</h4>
                             <p>May over was. Be signs two. Spirit. Brought said dry own firmament lesser best sixth deep
                                 abundantly bearing, him, gathering you
                                 blessed bearing he our position best ticket in month hole deep </p>
                             <a href="#" class="btn_3">Read More <img src="img/icon/left_2.svg" alt=""></a>
                         </div>
+
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-sm-4 col-lg-5 offset-lg-1">
+                        <div class="about_img">
+                            <img src="img/about.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-lg-4" id="bonus">
+                        <div class="about_text">
+                            <h5>Тук-Тук</h5>
+                            <h2>Хочешь сэкономить?</h2>
+                            <h4>Satisfying people hunger for simple pleasures</h4>
+                            <p>May over was. Be signs two. Spirit. Brought said dry own firmament lesser best sixth deep
+                                abundantly bearing, him, gathering you
+                                blessed bearing he our position best ticket in month hole deep </p>
+                            <a href="#" class="btn_3">Read More <img src="img/icon/left_2.svg" alt=""></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-sm-4 col-lg-5 offset-lg-1">
+                        <div class="about_img">
+                            <img src="img/about.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-lg-4" id="bonus">
+                        <div class="about_text">
+                            <h5>Тук-Тук</h5>
+                            <h2>Хочешь сэкономить?</h2>
+                            <h4>Satisfying people hunger for simple pleasures</h4>
+                            <p>May over was. Be signs two. Spirit. Brought said dry own firmament lesser best sixth deep
+                                abundantly bearing, him, gathering you
+                                blessed bearing he our position best ticket in month hole deep </p>
+                            <a href="#" class="btn_3">Read More <img src="img/icon/left_2.svg" alt=""></a>
+                        </div>
+
                     </div>
                 </div>
             </div>
+            <script>
+                $(document).ready(function() {
+                    $("#bonus").owlCarousel();
+                });
+            </script>
         </section>
         <!-- about part end-->
 
         <!-- intro_video_bg start-->
-        <section class="intro_video_bg">
+        <!-- <section class="intro_video_bg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -140,7 +183,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- intro_video_bg part start-->
 
         <!-- food_menu start-->
