@@ -25,10 +25,10 @@ $booking_button_class = $str = url()->current() != $_ENV['APP_URL'] ? 'single_pa
                                     <a class="nav-link" href="{{url('about')}}">О Нас</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="food_menu.html">Меню</a>
+                                    <a class="nav-link" href="{{url('menu')}}">Меню</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Как нас найти?</a>
+                                    <a class="nav-link" href="{{url('contact')}}">Как нас найти?</a>
                                 </li>
                             </ul>
                         </div>

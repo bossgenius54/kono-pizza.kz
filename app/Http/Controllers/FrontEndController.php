@@ -22,5 +22,15 @@ class FrontEndController extends Controller
         return view('frontEnd.index',compact('text'));
     }
 
+    public function menu() {
+        $text = 'hello world';
+        // return view('frontEnd.index',compact('products'));
+        return view('frontEnd.menu',compact('text'));
+    }
+
+    public function contact() {
+        return view('frontEnd.contact');
+    }
+
 
 }

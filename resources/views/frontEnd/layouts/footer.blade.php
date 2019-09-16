@@ -59,17 +59,17 @@
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             Copyright &copy;
                             <script>document.write(new Date().getFullYear());</script> 
-                            All rights reserved | This template is made with 
-                            <i class="ti-heart" aria-hidden="true"></i> by 
-                            <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            Все права защищены | Сделано с 
+                            <i class="ti-heart" aria-hidden="true"></i> для <a href="/">{{$_ENV['APP_NAME']}}</a>  от
+                            <a href="https://www.facebook.com/dinmukhamed.tezekbayev" target="_blank">Dinmukhamed Tezekbayev</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     </div>
                     <div class="col-lg-4">
                         <div class="copyright_social_icon text-right">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <!-- <a href="https://www.facebook.com/dinmukhamed.tezekbayev"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
                             <a href="#"><i class="ti-dribbble"></i></a>
-                            <a href="#"><i class="fab fa-behance"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a> -->
                         </div>
                     </div>
                 </div>
