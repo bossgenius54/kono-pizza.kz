@@ -33,7 +33,7 @@ $booking_button_class = $str = url()->current() != $_ENV['APP_URL'] ? 'single_pa
                             </ul>
                         </div>
                         <div class="menu_btn">
-                            <a href="#" class="{{$booking_button_class}}">Зарезервировать столик</a>
+                            <a href="#booking" class="{{$booking_button_class}}">Зарезервировать столик</a>
                         </div>
                     </nav>
                 </div>

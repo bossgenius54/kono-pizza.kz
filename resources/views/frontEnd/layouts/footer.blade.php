@@ -1,53 +1,33 @@
 <footer class="footer-area">
         <div class="container">
             <div class="row">
-                <div class="col-xl-3 col-sm-6 col-md-3 col-lg-3">
+                <div class="col-xl-6 col-sm-12 col-md-6 col-lg-6">
                     <div class="single-footer-widget footer_1">
-                        <h4>About Us</h4>
-                        <p>Heaven fruitful doesn't over for these theheaven fruitful doe over days
-                            appear creeping seasons sad behold beari ath of it fly signs bearing
-                            be one blessed after.</p>
+                        <h4>О Нас</h4>
+                        <p>
+                            В основе нашей философии лежит история Италянской кухни. Мы очень уважаем и национальную кухню, поэтому сделали 
+                            компинацию Казахской, Японской и Италянской кухни. Мы единственные, кто обеспечит вас ночью и днем доставкой до дома и офиса
+                            любое блюдо из меню. Кстати, посмотрите меню, там реально есть <b>Король Пиццы</b>. Просто нужно найти <b>Его Величество</b> и заказать.
+                        </p>
                     </div>
                 </div>
-                <div class="col-xl-3 col-sm-6 col-md-2 col-lg-3">
+                <div class="col-xl-3 col-sm-6 col-md-3 col-lg-3">
                     <div class="single-footer-widget footer_2">
-                        <h4>Important Link</h4>
+                        <h4>Мы еще в интернете</h4>
                         <div class="contact_info">
                             <ul>
-                                <li><a href="#">WHMCS-bridge</a></li>
-                                <li><a href="#"> Search Domain</a></li>
-                                <li><a href="#">My Account</a></li>
-                                <li><a href="#">Shopping Cart</a></li>
-                                <li><a href="#"> Our Shop</a></li>
+                                <li><a href="#">&nbsp;<i class="ti-instagram"></i>&nbsp;INSTAGRAM</a></li>
+                                <li><a href="#">&nbsp;<i class="ti-facebook"></i>&nbsp;Facebook</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-sm-6 col-md-3 col-lg-3">
                     <div class="single-footer-widget footer_2">
-                        <h4>Contact us</h4>
+                        <h4>Связаться с нами</h4>
                         <div class="contact_info">
-                            <p><span> Address :</span>Hath of it fly signs bear be one blessed after </p>
-                            <p><span> Phone :</span> +2 36 265 (8060)</p>
-                            <p><span> Email : </span>info@colorlib.com </p>
+                            <p><span> Адрес, Телефон и д.р информации :</span> <a href="{{url('contact')}}">Смотрите здесь</a> </p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 col-md-4 col-lg-3">
-                    <div class="single-footer-widget footer_3">
-                        <h4>Newsletter</h4>
-                        <p>Heaven fruitful doesn't over lesser in days. Appear creeping seas</p>
-                        <form action="#">
-                            <div class="form-group">
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder='Email Address'
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
-                                    <div class="input-group-append">
-                                        <button class="btn" type="button"><i class="fas fa-paper-plane"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>

@@ -33,7 +33,7 @@
         <!-- banner part start-->
 
         <!--::exclusive_item_part start::-->
-        <section class="exclusive_item_part blog_item_section">
+        <!-- <section class="exclusive_item_part blog_item_section">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-5">
@@ -94,7 +94,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--::exclusive_item_part end::-->
 
         <!-- about part start-->
@@ -114,7 +114,7 @@
                             <p>May over was. Be signs two. Spirit. Brought said dry own firmament lesser best sixth deep
                                 abundantly bearing, him, gathering you
                                 blessed bearing he our position best ticket in month hole deep </p>
-                            <a href="#" class="btn_3">Read More <img src="img/icon/left_2.svg" alt=""></a>
+                            <a href="#" class="btn_3">Получить <img src="img/icon/left_2.svg" alt=""></a>
                         </div>
 
                     </div>
@@ -133,7 +133,7 @@
                             <p>May over was. Be signs two. Spirit. Brought said dry own firmament lesser best sixth deep
                                 abundantly bearing, him, gathering you
                                 blessed bearing he our position best ticket in month hole deep </p>
-                            <a href="#" class="btn_3">Read More <img src="img/icon/left_2.svg" alt=""></a>
+                            <a href="#" class="btn_3">Получить <img src="img/icon/left_2.svg" alt=""></a>
                         </div>
 
                     </div>
@@ -152,7 +152,7 @@
                             <p>May over was. Be signs two. Spirit. Brought said dry own firmament lesser best sixth deep
                                 abundantly bearing, him, gathering you
                                 blessed bearing he our position best ticket in month hole deep </p>
-                            <a href="#" class="btn_3">Read More <img src="img/icon/left_2.svg" alt=""></a>
+                            <a href="#" class="btn_3">Получить <img src="img/icon/left_2.svg" alt=""></a>
                         </div>
 
                     </div>
@@ -166,49 +166,29 @@
         </section>
         <!-- about part end-->
 
-        <!-- intro_video_bg start-->
-        <!-- <section class="intro_video_bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="intro_video_iner text-center">
-                            <h2>Expect The Best</h2>
-                            <div class="intro_video_icon">
-                                <a id="play-video_1" class="video-play-button popup-youtube"
-                                    href="https://www.youtube.com/watch?v=pBFQdxA-apI">
-                                    <span class="ti-control-play"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- intro_video_bg part start-->
-
         <!-- food_menu start-->
         <section class="food_menu gray_bg">
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-lg-5">
                         <div class="section_tittle">
-                            <p>Popular Menu</p>
-                            <h2>Delicious Food Menu</h2>
+                            <p>Наш популярный меню</p>
+                            <h2>Разные вкусности</h2>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="nav nav-tabs food_menu_nav" id="myTab" role="tablist">
                             <a class="active" id="Special-tab" data-toggle="tab" href="#Special" role="tab"
-                                aria-controls="Special" aria-selected="false">Special <img src="img/icon/play.svg"
+                                aria-controls="Special" aria-selected="false">Пицца <img src="img/icon/play.svg"
                                     alt="play"></a>
                             <a id="Breakfast-tab" data-toggle="tab" href="#Breakfast" role="tab" aria-controls="Breakfast"
-                                aria-selected="false">Breakfast <img src="img/icon/play.svg" alt="play"></a>
+                                aria-selected="false">Коно Пицца <img src="img/icon/play.svg" alt="play"></a>
                             <a id="Launch-tab" data-toggle="tab" href="#Launch" role="tab" aria-controls="Launch"
-                                aria-selected="false">Launch <img src="img/icon/play.svg" alt="play"></a>
+                                aria-selected="false">Суши <img src="img/icon/play.svg" alt="play"></a>
                             <a id="Dinner-tab" data-toggle="tab" href="#Dinner" role="tab" aria-controls="Dinner"
-                                aria-selected="false">Dinner <img src="img/icon/play.svg" alt="play"> </a>
+                                aria-selected="false">Сеты <img src="img/icon/play.svg" alt="play"> </a>
                             <a id="Sneaks-tab" data-toggle="tab" href="#Sneaks" role="tab" aria-controls="Sneaks"
-                                aria-selected="false">Sneaks <img src="img/icon/play.svg" alt="play"></a>
+                                aria-selected="false">Напитки <img src="img/icon/play.svg" alt="play"></a>
                         </div>
                     </div>
                     <div class="col-lg-12">
@@ -222,7 +202,10 @@
                                             <div class="media-body align-self-center">
                                                 <h3>Pork Sandwich</h3>
                                                 <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
+                                                <h5 style="display: inline-block;">$40.00</h5>
+                                                <a href="#" class="single_page_btn  d-sm-inline-block" style="margin:15px;">
+                                                    Заказать по Whatsapp
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="single_food_item media">
@@ -508,7 +491,7 @@
         <!-- food_menu part end-->
 
         <!--::chefs_part start::-->
-        <section class="chefs_part blog_item_section section_padding">
+        <!-- <section class="chefs_part blog_item_section section_padding">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-5">
@@ -589,17 +572,17 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--::chefs_part end::-->
 
         <!--::regervation_part start::-->
-        <section class="regervation_part section_padding">
+        <section class="regervation_part section_padding" id="booking">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-5">
                         <div class="section_tittle">
-                            <p>Reservation</p>
-                            <h2>Book A Table</h2>
+                            <p>Регистрация</p>
+                            <h2>Зарезервировать столик</h2>
                         </div>
                     </div>
                 </div>
@@ -609,52 +592,73 @@
                             <form>
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
-                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Name *">
+                                        <input type="text" class="form-control" id="name" placeholder="Ваше имя">
                                     </div>
-                                    <div class="form-group col-md-6">
+                                    <!-- <div class="form-group col-md-6">
                                         <input type="password" class="form-control" id="inputPassword4"
                                             placeholder="Email address *">
-                                    </div>
+                                    </div> -->
                                     <div class="form-group col-md-6">
-                                        <select class="form-control" id="Select">
-                                            <option value="1" selected>Persons *</option>
-                                            <option value="2">Number of guests 1</option>
-                                            <option value="3">Number of guests 2</option>
-                                            <option value="4">Number of guests 3</option>
-                                            <option value="5">Number of guests 4</option>
+                                        <select class="form-control" id="people_count">
+                                            <option value="1" selected>Столик на * людей</option>
+                                            <option value="2">Гостей 1</option>
+                                            <option value="3">Гостей 2</option>
+                                            <option value="4">Гостей 3</option>
+                                            <option value="5">Гостей 4</option>
+                                            <option value="5">Гостей 5</option>
+                                            <option value="5">Гостей 6</option>
                                         </select>
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" id="pnone" placeholder="Phone number *">
+                                        <input type="number" class="form-control" id="phone" placeholder="Ваш номер телефона">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <div class="input-group date">
-                                            <input id="datepicker" type="text" class="form-control" placeholder="Date *" />
+                                            <input id="datepicker" type="text" class="form-control" placeholder="В какой день вы посетите нас?" />
                                         </div>
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <select class="form-control" id="Select2">
-                                            <option value="" selected>Time *</option>
-                                            <option value="1">8 AM TO 10AM</option>
-                                            <option value="1">10 AM TO 12PM</option>
-                                            <option value="1">12PM TO 2PM</option>
-                                            <option value="1">2PM TO 4PM</option>
-                                            <option value="1">4PM TO 6PM</option>
-                                            <option value="1">6PM TO 8PM</option>
-                                            <option value="1">4PM TO 10PM</option>
-                                            <option value="1">10PM TO 12PM</option>
+                                        <select class="form-control" id="time">
+                                            <option value="" selected>В какое время вы приедете?</option>
+                                            <option value="8:00 - 10:00">8:00 - 10:00</option>
+                                            <option value="10:00 - 12:00">10:00 - 12:00</option>
+                                            <option value="12:00 - 14:00">12:00 - 14:00</option>
+                                            <option value="14:00 - 16:00">14:00 - 16:00</option>
+                                            <option value="16:00 - 18:00">16:00 - 18:00</option>
+                                            <option value="18:00 - 20:00">18:00 - 20:00</option>
+                                            <option value="16:00 - 22:00">16:00 - 22:00</option>
+                                            <option value="22:00 - 00:00">22:00 - 00:00</option>
                                         </select>
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <textarea class="form-control" id="Textarea" rows="4"
-                                            placeholder="Your Note *"></textarea>
+                                        <textarea class="form-control" id="user_note" rows="4"
+                                            placeholder="Ваше примечание"></textarea>
                                     </div>
                                 </div>
 
 
                                 <div class="regerv_btn">
-                                    <a href="#" class="btn_4">Book A Table</a>
+                                    <a href="#" onclick="send();" class="btn_4">Забронировать столик</a>
+                                    <script>
+                                    function send (){
+                                        
+                                        var name = document.getElementById('name').value;
+                                        var count = document.getElementById('people_count').value;
+                                        var phone = document.getElementById('phone').value;
+                                        var date = document.getElementById('datepicker').value;
+                                        var time = document.getElementById('time').value;
+                                        var user_note = document.getElementById('user_note').value;
+
+                                        var text = "Привет, меня зовут "+name+". Я хотел бы вас посетить "+date+" в "+time+". Подготовите столик на "+count+" человек. \n"+user_note+"\n Номер для связи:"+phone+"";
+                                        text = encodeURI(text);
+                                        console.log(text);
+                                        window.location.replace('https://wa.me/77472470616/?text='+text);
+
+                                        return false;
+                                    }
+                                </script>
                                 </div>
+
                             </form>
                         </div>
                     </div>
@@ -669,8 +673,7 @@
                 <div class="row">
                     <div class="col-xl-5">
                         <div class="section_tittle">
-                            <p>Testimonials</p>
-                            <h2>Customers Feedback</h2>
+                            <h2>Отзывы посетителей</h2>
                         </div>
                     </div>
                 </div>
@@ -682,11 +685,10 @@
                                     <img src="img/client/client_1.png" alt="">
                                 </div>
                                 <div class="client_review_text media-body">
-                                    <p>Also made from. Give may saying meat there from heaven it lights face had is gathered
-                                        god dea earth light for life may itself shall whales made they're blessed whales
-                                        also made from give
-                                        may saying meat. There from heaven it lights face had amazing place</p>
-                                    <h4>Mosan Cameron, <span>Executive of fedex</span></h4>
+                                    <p>
+                                        Все круто, особенно сеты из суши и роллов. Ночной дожор перехватывает меня особенно в середине ночи, когда все уже закрылись. Но Коно Пицца доставляет всегда и везде. Блин, круто!!!
+                                    </p>
+                                    <h4>Сергей Иванов <span></span></h4>
                                 </div>
                             </div>
                             <div class="client_review_single media">
@@ -694,23 +696,10 @@
                                     <img src="img/client/client_1.png " alt="">
                                 </div>
                                 <div class="client_review_text media-body">
-                                    <p>Also made from. Give may saying meat there from heaven it lights face had is gathered
-                                        god dea earth light for life may itself shall whales made they're blessed whales
-                                        also made from give
-                                        may saying meat. There from heaven it lights face had amazing place</p>
-                                    <h4>Mosan Cameron, <span>Executive of fedex</span></h4>
-                                </div>
-                            </div>
-                            <div class="client_review_single media">
-                                <div class="client_img align-self-center">
-                                    <img src="img/client/client_1.png" alt="">
-                                </div>
-                                <div class="client_review_text media-body">
-                                    <p>Also made from. Give may saying meat there from heaven it lights face had is gathered
-                                        god dea earth light for life may itself shall whales made they're blessed whales
-                                        also made from give
-                                        may saying meat. There from heaven it lights face had amazing place</p>
-                                    <h4>Mosan Cameron, <span>Executive of fedex</span></h4>
+                                    <p>
+                                        И еще, спасибо Коно за Пиццу ночью
+                                    </p>
+                                    <h4>Сергей Иванов <span></span></h4>
                                 </div>
                             </div>
                         </div>
@@ -721,7 +710,7 @@
         <!--::review_part end::-->
 
         <!--::exclusive_item_part start::-->
-        <section class="blog_item_section blog_section section_padding">
+        <!-- <section class="blog_item_section blog_section section_padding">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-5">
@@ -794,7 +783,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--::exclusive_item_part end::-->
     </div>
 

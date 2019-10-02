@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use Image;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class FrontEndController extends Controller
@@ -30,6 +31,10 @@ class FrontEndController extends Controller
 
     public function contact() {
         return view('frontEnd.contact');
+    }
+
+    public function create_category() {
+        
     }
 
 

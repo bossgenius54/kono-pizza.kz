@@ -19,3 +19,16 @@ Route::get('/about', function () {
 
 Route::get('/menu','FrontEndController@menu')->name('menu');
 Route::get('/contact','FrontEndController@contact')->name('contact');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+// #################################### Admin #######################
+
+Route::prefix('admin')->group(function () {
+    Route::get('/','AdminController@index')->middleware(['auth'])->name('admin_home');
+    Route::get('/menu','AdminController@menu')->middleware(['auth'])->name('admin_menu');
+    Route::get('/order','AdminController@order')->middleware(['auth'])->name('admin_order');
+    Route::get('/bonus','AdminController@bonus')->middleware(['auth'])->name('admin_bonus');
+});
