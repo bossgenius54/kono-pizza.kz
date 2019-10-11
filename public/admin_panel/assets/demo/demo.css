@@ -1,3 +1,27 @@
+.category {
+  border-radius: 20px;
+  border: #0bb2a1 solid 1px;
+  margin: 5px;
+}
+.category form {
+  display: inline-block;
+  margin: 10px 8px;
+  text-align: center;
+}
+.category button {
+  display: inline-block;
+  border: transparent;
+  background: transparent;
+  cursor:pointer;
+  color: #0bb2a1;
+  position: relative;
+}
+.category p {
+  display: inline-block;
+  color: #0bb2a1;
+}
+
+
 .tim-typo {
   padding-left: 25%;
   margin-bottom: 40px;
@@ -7,7 +31,7 @@
 
 .tim-typo .tim-note {
   bottom: 5px;
-  color: #c0c1c2;
+  color: #aab2b9;
   display: block;
   font-weight: 400;
   font-size: 13px;

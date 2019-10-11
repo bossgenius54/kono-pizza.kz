@@ -68,6 +68,17 @@
           <div class="navbar-wrapper">
             <a class="navbar-brand" href="{{route('admin_home')}}">Административная панель</a>
           </div>
+          @if(Session::get('message') != '' )
+            <br/>
+            <div class="alert alert-info">
+              <button class="close" >
+                <i class="material-icons" data-dismiss="alert" aria-label="Close">close</i>
+              </button>
+              <span>
+                {{Session::get('message')}}
+              </span>
+            </div>
+            @endif
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon icon-bar"></span>

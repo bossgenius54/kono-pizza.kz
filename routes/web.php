@@ -29,6 +29,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::prefix('admin')->group(function () {
     Route::get('/','AdminController@index')->middleware(['auth'])->name('admin_home');
     Route::get('/menu','AdminController@menu')->middleware(['auth'])->name('admin_menu');
+    Route::post('/menu/c_category','AdminController@c_category')->middleware(['auth'])->name('admin_menu_add_cat');
+    Route::delete('/menu/delete_category/{id}', 'AdminController@d_category');
+    Route::post('/menu/c_food','AdminController@c_food')->middleware(['auth'])->name('admin_menu_add_food');
+    Route::delete('/menu/delete_food/{id}', 'AdminController@d_food')->name('delete_food');
     Route::get('/order','AdminController@order')->middleware(['auth'])->name('admin_order');
     Route::get('/bonus','AdminController@bonus')->middleware(['auth'])->name('admin_bonus');
 });

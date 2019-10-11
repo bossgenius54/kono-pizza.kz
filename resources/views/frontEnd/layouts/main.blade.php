@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title" content="Kono pizza - вкусная еда сама прыгнет к вам в тарелку">
     <meta name="description" content="У нас вы всегда найдете только самые вкусную еду и закуски. Доставка не более 45 минут. Закажи сайчас и получи бесплатно Колу в подарок.">
-    <title>Dingo</title>
+    <title>Коно Пицца</title>
     <link rel="icon" href="img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">

@@ -15,7 +15,7 @@
                     <h2>Административная панель</h2>  
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est illo eos laborum debitis facere, quasi praesentium quas dolores enim modi voluptates facilis sit iste corrupti perferendis commodi, sapiente, neque necessitatibus.
+                        В этой панели вы можете добавлять, удалять элементы ниже. Что бы изменить элементы, вам нужно пройти в соответствующую страницу.
                     </p>
 
                 </div>
