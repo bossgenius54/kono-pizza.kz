@@ -35,4 +35,6 @@ Route::prefix('admin')->group(function () {
     Route::delete('/menu/delete_food/{id}', 'AdminController@d_food')->name('delete_food');
     Route::get('/order','AdminController@order')->middleware(['auth'])->name('admin_order');
     Route::get('/bonus','AdminController@bonus')->middleware(['auth'])->name('admin_bonus');
+    Route::post('/menu/c_bonus','AdminController@c_bonus')->middleware(['auth'])->name('admin_menu_add_bonus');
+    Route::delete('/menu/delete_bonus/{id}', 'AdminController@d_bonus')->name('delete_bonus');
 });

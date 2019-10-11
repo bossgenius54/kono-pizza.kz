@@ -91,9 +91,10 @@ class AdminController extends Controller
     public function bonus () {
         $menu_active = 4;
         $text = '';
-        return view('admin.bonus',compact('menu_active'));
+        $bonuses = Bonus::all();
+        return view('admin.bonus',compact(['menu_active','bonuses']));
     }
-    public function c_bonus () {
+    public function c_bonus (Request $request) {
         $this->validate($request,[
             'b_offer'=>'required|min:4',
             'b_description'=>'required',
@@ -101,23 +102,30 @@ class AdminController extends Controller
         ]);
         $formInput=$request->all();
 
-        if($request->file('image')){
-            $image=$request->file('image');
-            if($image->isValid()){
-                $fileName=time().'-'.str_slug($formInput['b_offer'],"-").'.'.$image->getClientOriginalExtension();
-                $large_image_path=public_path('offer/large/'.$fileName);
-                $medium_image_path=public_path('offer/medium/'.$fileName);
-                $small_image_path=public_path('offer/small/'.$fileName);
-                //Resize Image
-                Image::make($image)->save($large_image_path);
-                Image::make($image)->resize(600,600)->save($medium_image_path);
-                Image::make($image)->resize(300,300)->save($small_image_path);
-                $formInput['image']=$fileName;
-            }
+        if ($request->has('image')) {
+            $image = $request->file('image');
+            
+            $name = str_slug($request->input('b_offer')).'_'.time();
+            $folder = '/uploads/bonus/';
+            $filePath = $folder . $name. '.' . $image->getClientOriginalExtension();
+            $filename = $name;
+            $name = !is_null($filename) ? $filename : str_random(25);
+            $uploadedFile = $image;
+            $file = $uploadedFile->storeAs($folder, $name.'.'.$uploadedFile->getClientOriginalExtension(), 'public');
+
+            $formInput['image'] = $filePath;
         }
 
 
         Bonus::create($formInput);
-        return redirect()->route('admin_menu')->with('message','Товар был добавлен успешно!');
+        return redirect()->route('admin_bonus')->with('message','Бонус или акция был(-a) добавлен успешно!');
     }
+
+    public function d_bonus ($id) {
+        $cat = Bonus::find($id);
+
+        $cat->delete();
+        return redirect()->route('admin_bonus')->with('message','Бонус или акция был(-a) удалено успешно!');
+    }
+
 }
