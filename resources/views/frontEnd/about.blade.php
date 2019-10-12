@@ -23,63 +23,29 @@
         <!-- about part start-->
         <section class="about_part">
             <div class="container-fluid client_review_part owl-carousel">
+                @foreach($bonuses as $bonus)
                 <div class="row align-items-center">
                     <div class="col-sm-4 col-lg-5 offset-lg-1">
                         <div class="about_img">
-                            <img src="img/about.png" alt="">
+                            <img src="{{$bonus->image}}" alt="{{$bonus->b_offer}}">
                         </div>
                     </div>
                     <div class="col-sm-8 col-lg-4" id="bonus">
                         <div class="about_text">
                             <h5>Тук-Тук</h5>
                             <h2>Хочешь сэкономить?</h2>
-                            <h4>Satisfying people hunger for simple pleasures</h4>
-                            <p>May over was. Be signs two. Spirit. Brought said dry own firmament lesser best sixth deep
-                                abundantly bearing, him, gathering you
-                                blessed bearing he our position best ticket in month hole deep </p>
-                            <a href="#" class="btn_3">Получить <img src="img/icon/left_2.svg" alt=""></a>
+                            <h4>{{$bonus->b_offer}}</h4>
+                            <p>
+                                {{$bonus->b_description}}
+                            </p>
+                            <a href="#" class="btn_3">Получить <img src="img/icon/left_2.svg" alt=""></a> 
+                            <!-- TODO Link -->
                         </div>
 
                     </div>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col-sm-4 col-lg-5 offset-lg-1">
-                        <div class="about_img">
-                            <img src="img/about.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-8 col-lg-4" id="bonus">
-                        <div class="about_text">
-                            <h5>Тук-Тук</h5>
-                            <h2>Хочешь сэкономить?</h2>
-                            <h4>Satisfying people hunger for simple pleasures</h4>
-                            <p>May over was. Be signs two. Spirit. Brought said dry own firmament lesser best sixth deep
-                                abundantly bearing, him, gathering you
-                                blessed bearing he our position best ticket in month hole deep </p>
-                            <a href="#" class="btn_3">Получить <img src="img/icon/left_2.svg" alt=""></a>
-                        </div>
+                @endforeach
 
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-sm-4 col-lg-5 offset-lg-1">
-                        <div class="about_img">
-                            <img src="img/about.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-8 col-lg-4" id="bonus">
-                        <div class="about_text">
-                            <h5>Тук-Тук</h5>
-                            <h2>Хочешь сэкономить?</h2>
-                            <h4>Satisfying people hunger for simple pleasures</h4>
-                            <p>May over was. Be signs two. Spirit. Brought said dry own firmament lesser best sixth deep
-                                abundantly bearing, him, gathering you
-                                blessed bearing he our position best ticket in month hole deep </p>
-                            <a href="#" class="btn_3">Получить <img src="img/icon/left_2.svg" alt=""></a>
-                        </div>
-
-                    </div>
-                </div>
             </div>
             <script>
                 $(document).ready(function() {

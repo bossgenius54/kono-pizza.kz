@@ -100,63 +100,29 @@
         <!-- about part start-->
         <section class="about_part">
             <div class="container-fluid client_review_part owl-carousel">
+                @foreach($bonuses as $bonus)
                 <div class="row align-items-center">
                     <div class="col-sm-4 col-lg-5 offset-lg-1">
                         <div class="about_img">
-                            <img src="img/about.png" alt="">
+                            <img src="{{$bonus->image}}" alt="{{$bonus->b_offer}}">
                         </div>
                     </div>
                     <div class="col-sm-8 col-lg-4" id="bonus">
                         <div class="about_text">
                             <h5>Тук-Тук</h5>
                             <h2>Хочешь сэкономить?</h2>
-                            <h4>Satisfying people hunger for simple pleasures</h4>
-                            <p>May over was. Be signs two. Spirit. Brought said dry own firmament lesser best sixth deep
-                                abundantly bearing, him, gathering you
-                                blessed bearing he our position best ticket in month hole deep </p>
-                            <a href="#" class="btn_3">Получить <img src="img/icon/left_2.svg" alt=""></a>
+                            <h4>{{$bonus->b_offer}}</h4>
+                            <p>
+                                {{$bonus->b_description}}
+                            </p>
+                            <a href="#" class="btn_3">Получить <img src="img/icon/left_2.svg" alt=""></a> 
+                            <!-- TODO Link -->
                         </div>
 
                     </div>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col-sm-4 col-lg-5 offset-lg-1">
-                        <div class="about_img">
-                            <img src="img/about.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-8 col-lg-4" id="bonus">
-                        <div class="about_text">
-                            <h5>Тук-Тук</h5>
-                            <h2>Хочешь сэкономить?</h2>
-                            <h4>Satisfying people hunger for simple pleasures</h4>
-                            <p>May over was. Be signs two. Spirit. Brought said dry own firmament lesser best sixth deep
-                                abundantly bearing, him, gathering you
-                                blessed bearing he our position best ticket in month hole deep </p>
-                            <a href="#" class="btn_3">Получить <img src="img/icon/left_2.svg" alt=""></a>
-                        </div>
+                @endforeach
 
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-sm-4 col-lg-5 offset-lg-1">
-                        <div class="about_img">
-                            <img src="img/about.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-8 col-lg-4" id="bonus">
-                        <div class="about_text">
-                            <h5>Тук-Тук</h5>
-                            <h2>Хочешь сэкономить?</h2>
-                            <h4>Satisfying people hunger for simple pleasures</h4>
-                            <p>May over was. Be signs two. Spirit. Brought said dry own firmament lesser best sixth deep
-                                abundantly bearing, him, gathering you
-                                blessed bearing he our position best ticket in month hole deep </p>
-                            <a href="#" class="btn_3">Получить <img src="img/icon/left_2.svg" alt=""></a>
-                        </div>
-
-                    </div>
-                </div>
             </div>
             <script>
                 $(document).ready(function() {
@@ -178,81 +144,81 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="nav nav-tabs food_menu_nav" id="myTab" role="tablist">
-                            <a class="active" id="Special-tab" data-toggle="tab" href="#Special" role="tab"
-                                aria-controls="Special" aria-selected="false">Пицца <img src="img/icon/play.svg"
-                                    alt="play"></a>
-                            <a id="Breakfast-tab" data-toggle="tab" href="#Breakfast" role="tab" aria-controls="Breakfast"
-                                aria-selected="false">Коно Пицца <img src="img/icon/play.svg" alt="play"></a>
-                            <a id="Launch-tab" data-toggle="tab" href="#Launch" role="tab" aria-controls="Launch"
-                                aria-selected="false">Суши <img src="img/icon/play.svg" alt="play"></a>
-                            <a id="Dinner-tab" data-toggle="tab" href="#Dinner" role="tab" aria-controls="Dinner"
-                                aria-selected="false">Сеты <img src="img/icon/play.svg" alt="play"> </a>
-                            <a id="Sneaks-tab" data-toggle="tab" href="#Sneaks" role="tab" aria-controls="Sneaks"
-                                aria-selected="false">Напитки <img src="img/icon/play.svg" alt="play"></a>
+                            @foreach($categories as $cat)
+
+                                @if($cat->id == $categories[0]->id)
+                                    <a class="active" id="{{$cat->id}}-tab" data-toggle="tab" href="#tab{{$cat->id}}" role="tab"
+                                        aria-controls="tab{{$cat->id}}" aria-selected="false">{{$cat->name}} <img src="img/icon/play.svg"
+                                            alt="play"></a>
+                                @else
+                                    <a class="" id="{{$cat->id}}-tab" data-toggle="tab" href="#tab{{$cat->id}}" role="tab"
+                                        aria-controls="tab{{$cat->id}}" aria-selected="false">{{$cat->name}}</a>
+                                @endif
+
+                            @endforeach
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active single-member" id="Special" role="tabpanel"
-                                aria-labelledby="Special-tab">
-                                <div class="row">
-                                    <div class="col-sm-6 col-lg-6">
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_1.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Pork Sandwich</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5 style="display: inline-block;">$40.00</h5>
-                                                <a href="#" class="single_page_btn  d-sm-inline-block" style="margin:15px;">
-                                                    Заказать по Whatsapp
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_2.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Roasted Marrow</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_3.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Summer Cooking</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
+                            @foreach($categories as $cat)
+
+                                @if($cat->id == $categories[0]->id)
+
+                                    <div class="tab-pane fade show active single-member" id="tab{{$cat->id}}" role="tabpanel"
+                                aria-labelledby="{{$cat->id}}-tab">
+                                        <div class="row">
+
+                                            @foreach($foods as $food)
+                                            @if($food->category_id == $cat->id)
+                                                <div class="col-sm-6 col-lg-12">
+                                                    <div class="single_food_item media">
+                                                        <img src="{{$food->image}}" class="mr-3" alt="..." width="300px" height="200px">
+                                                        <div class="media-body align-self-center">
+                                                            <h3>{{$food->f_name}}</h3>
+                                                            <p>{{$food->f_description}}</p>
+                                                            <h5 style="display: inline-block;">{{$food->price}} ₸</h5>
+                                                            <a href="#" class="single_page_btn  d-sm-inline-block" style="margin:15px;">
+                                                                Заказать по Whatsapp
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            @endif
+                                            @endforeach
+
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-lg-6">
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_4.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Easter Delight</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_5.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Tiener Schnitze</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_6.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Chicken Roast</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
+                                
+                                @else
+                                    <div class="tab-pane fade single-member" id="tab{{$cat->id}}" role="tabpanel"
+                                    aria-labelledby="{{$cat->id}}-tab">
+                                        <div class="row">
+
+                                            @foreach($foods as $food)
+                                            @if($food->category_id == $cat->id)
+                                                <div class="col-sm-6 col-lg-12">
+                                                    <div class="single_food_item media">
+                                                        <img src="{{$food->image}}" class="mr-3" alt="..." width="300px" height="200px">
+                                                        <div class="media-body align-self-center">
+                                                            <h3>{{$food->f_name}}</h3>
+                                                            <p>{{$food->f_description}}</p>
+                                                            <h5 style="display: inline-block;">{{$food->price}} ₸</h5>
+                                                            <a href="#" class="single_page_btn  d-sm-inline-block" style="margin:15px;">
+                                                                Заказать по Whatsapp
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            @endif
+                                            @endforeach
+
                                         </div>
                                     </div>
-                                </div>
-                            </div>
+
+                                @endif
+
+                            @endforeach
+                            
                             <div class="tab-pane fade single-member" id="Breakfast" role="tabpanel"
                                 aria-labelledby="Breakfast-tab">
                                 <div class="row">
@@ -303,179 +269,6 @@
                                             <img src="img/food_menu/single_food_3.png" class="mr-3" alt="...">
                                             <div class="media-body align-self-center">
                                                 <h3>Summer Cooking</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade single-member" id="Launch" role="tabpanel"
-                                aria-labelledby="Launch-tab">
-                                <div class="row">
-                                    <div class="col-sm-6 col-lg-6">
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_1.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Pork Sandwich</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_2.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Roasted Marrow</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_3.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Summer Cooking</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-lg-6">
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_4.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Easter Delight</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_5.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Tiener Schnitze</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_6.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Chicken Roast</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="tab-pane fade single-member" id="Dinner" role="tabpanel"
-                                aria-labelledby="Dinner-tab">
-                                <div class="row">
-                                    <div class="col-sm-6 col-lg-6">
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_4.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Easter Delight</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_5.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Tiener Schnitze</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_6.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Chicken Roast</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-lg-6">
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_1.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Pork Sandwich</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_2.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Roasted Marrow</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_3.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Summer Cooking</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="tab-pane fade single-member" id="Sneaks" role="tabpanel"
-                                aria-labelledby="Sneaks-tab">
-                                <div class="row">
-                                    <div class="col-sm-6 col-lg-6">
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_1.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Pork Sandwich</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_2.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Roasted Marrow</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_3.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Summer Cooking</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-lg-6">
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_4.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Easter Delight</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_5.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Tiener Schnitze</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_6.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Chicken Roast</h3>
                                                 <p>They're wherein heaven seed hath nothing</p>
                                                 <h5>$40.00</h5>
                                             </div>

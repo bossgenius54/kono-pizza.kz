@@ -13,9 +13,7 @@
 
 Route::get('/','FrontEndController@index')->name('main');
 
-Route::get('/about', function () {
-    return view('frontEnd/about');
-})->name('about');
+Route::get('/about', 'FrontEndController@about')->name('about');
 
 Route::get('/menu','FrontEndController@menu')->name('menu');
 Route::get('/contact','FrontEndController@contact')->name('contact');
