@@ -162,6 +162,16 @@
   }
 });
 
+$('.whatsapp').on('click',function(e){
+  e.preventDefault();
+  var f_name = $(this).attr('data-name');
+  var text1 = "Хочу заказать "+f_name+". \n ";
+  text1 = encodeURI(text1);
+  console.log(text1);
+  window.location.replace('https://wa.me/77472470616/?text='+text1);
+
+});
+
 
 
 

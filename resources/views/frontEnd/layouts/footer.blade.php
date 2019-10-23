@@ -16,8 +16,7 @@
                         <h4>Мы еще в интернете</h4>
                         <div class="contact_info">
                             <ul>
-                                <li><a href="#">&nbsp;<i class="ti-instagram"></i>&nbsp;INSTAGRAM</a></li>
-                                <li><a href="#">&nbsp;<i class="ti-facebook"></i>&nbsp;Facebook</a></li>
+                                <li><a href="https://instagram.com/kono_pizza13">&nbsp;<i class="ti-instagram"></i>&nbsp;INSTAGRAM</a></li> 
                             </ul>
                         </div>
                     </div>
