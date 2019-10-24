@@ -172,7 +172,7 @@
                                             @if($food->category_id == $cat->id)
                                                 <div class="col-sm-6 col-lg-12">
                                                     <div class="single_food_item media">
-                                                        <img src="{{$food->image}}" class="mr-3" alt="..." width="300px" height="200px">
+                                                        <img src="{{$food->image}}" class="mr-3" alt="..." width="" height="">
                                                         <div class="media-body align-self-center">
                                                             <h3>{{$food->f_name}}</h3>
                                                             <p>{{$food->f_description}}</p>
@@ -198,7 +198,7 @@
                                             @if($food->category_id == $cat->id)
                                                 <div class="col-sm-6 col-lg-12">
                                                     <div class="single_food_item media">
-                                                        <img src="{{$food->image}}" class="mr-3" alt="..." width="300px" height="200px">
+                                                        <img src="{{$food->image}}" class="mr-3" alt="..." width="" height="">
                                                         <div class="media-body align-self-center">
                                                             <h3>{{$food->f_name}}</h3>
                                                             <p>{{$food->f_description}}</p>
@@ -221,63 +221,6 @@
                             <script>
                             
                             </script>
-                            <div class="tab-pane fade single-member" id="Breakfast" role="tabpanel"
-                                aria-labelledby="Breakfast-tab">
-                                <div class="row">
-                                    <div class="col-sm-6 col-lg-6">
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_4.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Easter Delight</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_5.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Tiener Schnitze</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_6.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Chicken Roast</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-lg-6">
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_1.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Pork Sandwich</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_2.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Roasted Marrow</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                        <div class="single_food_item media">
-                                            <img src="img/food_menu/single_food_3.png" class="mr-3" alt="...">
-                                            <div class="media-body align-self-center">
-                                                <h3>Summer Cooking</h3>
-                                                <p>They're wherein heaven seed hath nothing</p>
-                                                <h5>$40.00</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
