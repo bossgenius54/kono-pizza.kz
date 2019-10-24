@@ -3424,7 +3424,7 @@ ul {
     margin-right: auto !important;
     text-align: center;
     /* border-radius: 50%; */
-    max-width: 400px;
+    max-width: 100%;
   }
 }
 
