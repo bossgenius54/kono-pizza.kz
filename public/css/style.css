@@ -3422,7 +3422,7 @@ ul {
     display: block;
     margin-right: auto !important;
     text-align: center;
-    border-radius: 50%;
+    /* border-radius: 50%; */
   }
 }
 
