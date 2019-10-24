@@ -3412,6 +3412,7 @@ ul {
 /* line 98, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_food_menu.scss */
 .food_menu .single_food_item img {
   border-right: 10px solid #f6f5f1;
+  max-width: 400px;
 }
 
 @media (max-width: 576px) {
@@ -3423,6 +3424,7 @@ ul {
     margin-right: auto !important;
     text-align: center;
     /* border-radius: 50%; */
+    max-width: 400px;
   }
 }
 
