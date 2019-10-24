@@ -61,12 +61,12 @@
                                             @if($food->category_id == $cat->id)
                                                 <div class="col-sm-6 col-lg-12">
                                                     <div class="single_food_item media">
-                                                        <img src="{{$food->image}}" class="mr-3" alt="..." width="300px" height="200px">
+                                                        <img src="{{$food->image}}" class="mr-3" alt="..." width="" height="">
                                                         <div class="media-body align-self-center">
                                                             <h3>{{$food->f_name}}</h3>
                                                             <p>{{$food->f_description}}</p>
                                                             <h5 style="display: inline-block;">{{$food->price}} ₸</h5>
-                                                            <a href="#" class="single_page_btn  d-sm-inline-block" style="margin:15px;">
+                                                            <a href="#" class="single_page_btn  d-sm-inline-block whatsapp" data-name="{{$food->f_name}}" style="margin:15px;">
                                                                 Заказать по Whatsapp
                                                             </a>
                                                         </div>
@@ -87,12 +87,12 @@
                                             @if($food->category_id == $cat->id)
                                                 <div class="col-sm-6 col-lg-12">
                                                     <div class="single_food_item media">
-                                                        <img src="{{$food->image}}" class="mr-3" alt="..." width="300px" height="200px">
+                                                        <img src="{{$food->image}}" class="mr-3" alt="..." width="" height="">
                                                         <div class="media-body align-self-center">
                                                             <h3>{{$food->f_name}}</h3>
                                                             <p>{{$food->f_description}}</p>
                                                             <h5 style="display: inline-block;">{{$food->price}} ₸</h5>
-                                                            <a href="#" class="single_page_btn  d-sm-inline-block" style="margin:15px;">
+                                                            <a href="#" class="single_page_btn  d-sm-inline-block whatsapp" style="margin:15px;">
                                                                 Заказать по Whatsapp
                                                             </a>
                                                         </div>
@@ -107,7 +107,9 @@
                                 @endif
 
                             @endforeach
+                            <script>
                             
+                            </script>
                         </div>
                     </div>
                 </div>
