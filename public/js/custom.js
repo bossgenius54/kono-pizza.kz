@@ -165,7 +165,8 @@
 $('.whatsapp').on('click',function(e){
   e.preventDefault();
   var f_name = $(this).attr('data-name');
-  var text1 = "Хочу заказать "+f_name+". \n ";
+  var price = $(this).attr('data-price');
+  var text1 = "Хочу заказать "+f_name+" - "+price+". \n ";
   text1 = encodeURI(text1);
   console.log(text1);
   window.location.replace('https://wa.me/77784573333/?text='+text1);
