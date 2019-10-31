@@ -66,7 +66,7 @@
                                                             <h3>{{$food->f_name}}</h3>
                                                             <p>{{$food->f_description}}</p>
                                                             <h5 style="display: inline-block;">{{$food->price}} ₸</h5>
-                                                            <a href="#" class="single_page_btn  d-sm-inline-block whatsapp" data-name="{{$food->f_name}}" style="margin:15px;">
+                                                            <a href="#" class="single_page_btn  d-sm-inline-block whatsapp" data-name="{{$food->f_name}}" data-price="{{$food->price}} тг"  style="margin:15px;">
                                                                 Заказать по Whatsapp
                                                             </a>
                                                         </div>
@@ -92,7 +92,7 @@
                                                             <h3>{{$food->f_name}}</h3>
                                                             <p>{{$food->f_description}}</p>
                                                             <h5 style="display: inline-block;">{{$food->price}} ₸</h5>
-                                                            <a href="#" class="single_page_btn  d-sm-inline-block whatsapp" style="margin:15px;">
+                                                            <a href="#" class="single_page_btn  d-sm-inline-block whatsapp" data-name="{{$food->f_name}}" data-price="{{$food->price}} тг" style="margin:15px;">
                                                                 Заказать по Whatsapp
                                                             </a>
                                                         </div>
